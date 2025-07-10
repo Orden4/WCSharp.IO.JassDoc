@@ -4,4 +4,5 @@ For more information, see the [main repository](https://github.com/Orden4/WCShar
 
 # WCSharp.IO.JassDoc
 Parses the markdown-annotated jass files, courtesy of [JassDoc](https://github.com/lep/jassdoc), using [Pidgin](https://github.com/benjamin-hodgson/Pidgin).
+
 To use, simply provide one or more URI's pointing to either file or web locations to the JassDocParser.
