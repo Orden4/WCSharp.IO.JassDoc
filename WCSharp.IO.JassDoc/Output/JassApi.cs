@@ -7,6 +7,9 @@ namespace WCSharp.IO.JassDoc.Output
 	/// </summary>
 	public class JassApi
 	{
+		/// <summary>
+		/// All entities defined within this Jass API.
+		/// </summary>
 		[JsonIgnore]
 		public IEnumerable<JassEntity> Entities => Methods.AsEnumerable<JassEntity>().Concat(Properties).Concat(Types);
 

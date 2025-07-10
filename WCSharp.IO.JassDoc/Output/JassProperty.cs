@@ -1,5 +1,8 @@
 ﻿namespace WCSharp.IO.JassDoc.Output
 {
+	/// <summary>
+	/// Any sort of property, value, constant or array decleration within a JassDoc file.
+	/// </summary>
 	public class JassProperty : JassEntity
 	{
 		/// <summary>
@@ -19,6 +22,7 @@
 		/// </summary>
 		public bool IsConstant { get; set; }
 
+		/// <inheritdoc/>
 		public override string ToString()
 		{
 			return Name;

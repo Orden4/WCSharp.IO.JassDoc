@@ -1,5 +1,9 @@
 ﻿namespace WCSharp.IO.JassDoc.Output
 {
+	/// <summary>
+	/// Describes a method or function definition within Jass.
+	/// <para>Essentially, anything that is called with 0 or more parameters.</para>
+	/// </summary>
 	public class JassMethod : JassEntity
 	{
 		/// <summary>
@@ -28,6 +32,7 @@
 		/// </summary>
 		public bool IsConstant { get; set; }
 
+		/// <inheritdoc/>
 		public override string ToString()
 		{
 			return $"{Name}({string.Join(", ", Parameters.Select(x => x.Name))})";

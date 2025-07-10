@@ -6,13 +6,22 @@ using static Pidgin.Parser;
 
 namespace WCSharp.IO.JassDoc.Parsing
 {
+	/// <summary>
+	/// Used to parse JassDoc files into <see cref="JassApi"/> specifications.
+	/// </summary>
 	public static class JassDocParser
 	{
+		/// <summary>
+		/// Loads one or more JassDoc files and parses them into <see cref="JassApi"/> objects.
+		/// </summary>
 		public static Task<JassApi> ParseDocAsync(params Uri[] uris)
 		{
 			return ParseDocAsync([.. uris.Select(x => new JassDocTarget(x))]);
 		}
 
+		/// <summary>
+		/// Loads one or more JassDoc files and parses them into <see cref="JassApi"/> objects.
+		/// </summary>
 		public static async Task<JassApi> ParseDocAsync(params JassDocTarget[] targets)
 		{
 			var result = new JassApi();

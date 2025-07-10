@@ -1,5 +1,8 @@
 ﻿namespace WCSharp.IO.JassDoc.Output
 {
+	/// <summary>
+	/// Any parameter used by methods or functions (e.g. <c>takes integer whichInt</c>).
+	/// </summary>
 	public class JassMethodParameter
 	{
 		/// <summary>

@@ -1,5 +1,8 @@
 ﻿namespace WCSharp.IO.JassDoc.Output
 {
+	/// <summary>
+	/// A type specification as declared within Jass, e.g. <c>handle</c> or <c>unit</c>.
+	/// </summary>
 	public class JassType : JassEntity
 	{
 		/// <summary>
@@ -8,6 +11,7 @@
 		/// </summary>
 		public string? Extends { get; set; }
 
+		/// <inheritdoc/>
 		public override string ToString()
 		{
 			return Name;
