@@ -44,7 +44,7 @@ namespace WCSharp.IO.JassDoc.Parsing
 					content = await response.Content.ReadAsStringAsync();
 				}
 
-				return ParseDoc(content, sourceFileName);
+				result.Merge(ParseDoc(content, sourceFileName));
 			}
 
 			return result;
