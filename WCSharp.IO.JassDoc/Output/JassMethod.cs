@@ -31,6 +31,10 @@
 		/// If the function is prefixed with <c>constant</c>.
 		/// </summary>
 		public bool IsConstant { get; set; }
+		/// <summary>
+		/// Whether the function has a body, i.e. is defined in code rather than a native call.
+		/// </summary>
+		public bool HasBody => SourceCode.EndsWith("endfunction");
 
 		/// <inheritdoc/>
 		public override string ToString()
